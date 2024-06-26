@@ -28,4 +28,5 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./public
+          publish_branch: gh-pages
           cname: blog.nelsondane.me
