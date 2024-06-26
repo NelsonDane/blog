@@ -12,18 +12,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Update submodules
-        run: git submodule update --init --recursive
+        with:
+          submodules: 'recursive'
+          fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+          extended: true
       - name: Build
         run: hugo --minify
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./public
-          publish_branch: main
           cname: blog.nelsondane.me
