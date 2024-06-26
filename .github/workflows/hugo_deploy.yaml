@@ -27,6 +27,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.PAT }}
-          publish_dir: ./public
+          publish_dir: ./blog/public
           publish_branch: gh-pages
           cname: blog.nelsondane.me
