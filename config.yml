@@ -9,7 +9,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: G-Q7JXDTJ87P
+services:
+  googleAnalytics:
+    ID: G-Q7JXDTJ87P
 
 minify:
   disableXML: true
@@ -28,4 +30,3 @@ outputs:
     - HTML
     - RSS
     - JSON
-  
