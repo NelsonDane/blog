@@ -3,7 +3,6 @@ languageCode: en-us
 title: "Nelson's Blog"
 theme: "PaperMod"
 enableEmoji: true
-comments: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -25,6 +24,7 @@ params:
   keywords: [Blog, Portfolio, Technology]
   author: Nelson Dane
   defaultTheme: auto
+  comments: true
 
 menu:
   main:
