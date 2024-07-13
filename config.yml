@@ -1,4 +1,4 @@
-baseURL: "https://blog.nelsondane.me"
+baseURL: "https://blog.nelsondane.me/"
 languageCode: en-us
 title: "Nelson's Blog"
 theme: "PaperMod"
@@ -24,6 +24,29 @@ params:
   keywords: [Blog, Portfolio, Technology]
   author: Nelson Dane
   defaultTheme: auto
+
+menu:
+  main:
+    - identifier: "Posts"
+      name: "Posts"
+      url: "/posts/"
+      weight: 1
+    - identifier: "Tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 2
+    - identifier: "Search"
+      name: "Search"
+      url: "/search/"
+      weight: 3
+    - identifier: "GitHub"
+      name: "GitHub"
+      url: "https://github.com/NelsonDane"
+      weight: 4
+    - identifier: "LinkedIn"
+      name: "LinkedIn"
+      url: "https://www.linkedin.com/in/nelsondane/"
+      weight: 5
 
 outputs:
   home:

@@ -1,6 +1,5 @@
 ---
-layout: search
-placeholder: Search Posts
-summary: search
-title: Search
+title: "Search"
+layout: "search"
+summary: "search"
 ---
