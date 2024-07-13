@@ -3,6 +3,7 @@ languageCode: en-us
 title: "Nelson's Blog"
 theme: "PaperMod"
 enableEmoji: true
+comments: true
 
 enableRobotsTXT: true
 buildDrafts: false
