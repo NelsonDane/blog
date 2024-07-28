@@ -24,9 +24,18 @@ article:
   showHero: true
   showComments: true
   heroStyle: background
-  # showViews: true
-  # showLikes: true
+  showViews: true
+  showLikes: true
 
 list:
   showHero: true
   showSummary: false
+
+firebase:
+  apiKey: AIzaSyBo7BXRtB4zjc9LyYb0c78bJKKqxOyaxgQ
+  authDomain: blog-58d83.firebaseapp.com
+  projectId: blog-58d83
+  storageBucket: blog-58d83.appspot.com
+  messagingSenderId: 43679632557
+  appId: 1:43679632557:web:2f701b9102a35ebf124a24
+  measurementId: G-1BPQ8JLBXM
