@@ -1,0 +1,18 @@
+main:
+  - name: "Posts"
+    pageRef: "/posts/"
+    weight: 1
+  - name: "Series"
+    pageRef: "/series/"
+    weight: 2
+  - name: "Tags"
+    pageRef: "/tags/"
+    weight: 3
+  - identifier: "GitHub"
+    pre: "GitHub"
+    url: "https://github.com/NelsonDane"
+    weight: 4
+  - identifier: "LinkedIn"
+    pre: "LinkedIn"
+    url: "https://www.linkedin.com/in/nelsondane/"
+    weight: 5

@@ -1,0 +1,32 @@
+autoSwitchAppearance: true
+enableSearch: true
+enableCodeCopy: true
+smartTOC: true
+robots: all
+dateFormat: 2006-01-02
+
+homepage:
+  layout: profile
+  showRecent: true
+
+footer:
+  showAppearanceSwitcher: true
+
+article:
+  showTableOfContents: true
+  showEdit: true
+  editURL: https://github.com/NelsonDane/blog/content
+  showWordCount: false
+  showAuthorBottom: true
+  showTaxonomies: true
+  showRelatedContent: true
+  relatedContentLimit: 3
+  showHero: true
+  showComments: true
+  heroStyle: background
+  # showViews: true
+  # showLikes: true
+
+list:
+  showHero: true
+  showSummary: false

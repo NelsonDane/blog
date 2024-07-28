@@ -3,10 +3,9 @@ date: '2024-06-25T16:27:33-05:00'
 draft: false
 title: 'Contributing to Foss Doesn''t Have to Be Hard'
 description: 'A guide to making small but meaningful contributions to open source projects.'
-series: 'Open Source'
+series: ['Open Source']
+series_order: 1
 tags: ['foss', 'open-source', 'contributing', 'github', hi.events]
-showToc: true
-TOCOpen: true
 ---
 
 

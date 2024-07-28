@@ -1,0 +1,24 @@
+baseURL: "https://blog.nelsondane.me/"
+defaultContentLanguage: "en"
+title: "Nelson's Blog"
+theme: "blowfish"
+enableEmoji: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: "G-Q7JXDTJ87P"
+
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+  series: series
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
