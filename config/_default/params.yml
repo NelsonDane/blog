@@ -15,7 +15,7 @@ footer:
 article:
   showTableOfContents: true
   showEdit: true
-  editURL: https://github.com/NelsonDane/blog/content
+  editURL: https://github.com/NelsonDane/blog/tree/main/content/
   showWordCount: false
   showAuthorBottom: true
   showTaxonomies: true
