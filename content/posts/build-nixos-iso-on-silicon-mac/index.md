@@ -58,7 +58,11 @@ Without going into too much detail, this flake defines a base NixOS install, alo
 nix build .#nixosConfigurations.exampleIso.config.system.build.isoImage
 ```
 
-On an x86_64 based system, this would build the ISO without issue and you'd be done! However, on my Apple Silicon Mac, I was greeted with the error message above. Part of the Apple tax I guess.
+On an x86_64 based system, this would build the ISO without issue and you'd be done! However, on my Apple Silicon Mac, I was greeted with the error message below. Part of the Apple tax I guess.
+
+```bash
+error: a 'x86_64-linux' with features {} is required to build '/nix/store/pb15l48pzy7mkl7zw7fjlv2m94jajkxj-loopback.cfg.drv', but I am a 'aarch64-darwin' with features {apple-virt, benchmark, big-parallel, nixos-test}
+```
 
 ## Building the ISO in a Docker Container
 Thankfully, thanks to Rosetta, Docker can run `x86_64` containers on Apple Silicon Macs. Still inside the folder containing my `flake.nix` above, I created an ephemeral Docker container to build the ISO using the following command:
