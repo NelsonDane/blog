@@ -3,8 +3,8 @@ date: '2024-08-30T16:13:18-04:00'
 draft: false
 title: 'Building an x86 NixOS ISO on an Apple Silicon Mac'
 description: 'How to build an x86 NixOS ISO on an Apple Silicon Mac.'
-series: []
-series_order: 0
+series: ['Clarkson ECE Cluster']
+series_order: 1
 tags: ['nixos', 'docker', 'apple-silicon', 'x86_64']
 ---
 
