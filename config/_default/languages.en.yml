@@ -5,4 +5,4 @@ author:
   links:
     - github: "https://github.com/NelsonDane"
     - linkedin: "https://www.linkedin.com/in/nelsondane/"
-    #- rss: "https://blog.nelsondane.com/index.xml"
+    - rss: "/index.xml"
