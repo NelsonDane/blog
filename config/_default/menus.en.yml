@@ -18,5 +18,5 @@ main:
     weight: 5
   - identifier: "RSS"
     pre: "RSS"
-    url: "/index.xml"
+    url: "https://blog.nelsondane.me/index.xml"
     weight: 6
