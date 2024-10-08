@@ -16,7 +16,3 @@ main:
     pre: "LinkedIn"
     url: "https://www.linkedin.com/in/nelsondane/"
     weight: 5
-  - identifier: "RSS"
-    pre: "RSS"
-    url: "https://blog.nelsondane.me/index.xml"
-    weight: 6
