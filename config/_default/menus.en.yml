@@ -8,16 +8,16 @@ main:
   - name: "Tags"
     pageRef: "/tags/"
     weight: 10
-  - identifier: "GitHub"
-    pre: "GitHub"
+  - identifier: "github"
+    pre: "github"
     url: "https://github.com/NelsonDane"
     weight: 30
-  - identifier: "LinkedIn"
-    pre: "LinkedIn"
+  - identifier: "linkedin"
+    pre: "linkedin"
     url: "https://www.linkedin.com/in/nelsondane/"
     weight: 30
-  - identifier: "RSS"
-    pre: "RSS"
+  - identifier: "rss"
+    pre: "rss"
     url: "/index.xml"
     weight: 30
 
