@@ -6,7 +6,7 @@ robots: all
 dateFormat: 2006-01-02
 
 # https://blowfish.page/docs/getting-started/#colour-schemes
-colorScheme: fire
+colorScheme: congo
 
 homepage:
   layout: profile
