@@ -34,6 +34,7 @@ Fortunately for us, we don't need a magic snow globe to fix this. We can use the
 ```bash
 git filter-branch --tree-filter 'rm -f */*/input.txt' HEAD
 ```
+(From [this Reddit comment](https://old.reddit.com/r/adventofcode/comments/18an94z/psa_dont_share_your_inputs_even_in_your_github/kbzkow5/))
 
 You might need to adjust the `rm -f */*/input.txt` part of the command to match the path of your input files. For me, all my inputs were named `input.txt` and were two directories deep (e.g. `2023/day1/input.txt`). If you have a different naming scheme, you'll need to adjust the command accordingly. If you want to see what files are picked up by the glob, you can run `ls */*/input.txt` to see the list of files that will be removed.
 
