@@ -12,7 +12,7 @@ tags: ['advent-of-code', 'git', 'github']
 *Now you won't get coal in your stocking, guaranteed!*
 {{< /lead >}}
 
-{{< github repo="NelsonDane/advent-of-code" >}}
+{{< github repo="NelsonDane/advent-of-code" showThumbnail=false >}}
 
 ## Introduction
 Advent of Code is a wonderful way to spend the holidays helping virtual elves solve puzzles instead of spending time with your family. However, during this season of giving and sharing, there's one thing you should keep to yourself: your unique puzzle inputs. This is something I (and many others) didn't know when I first started participating in Advent of Code, so my git history was littered with my unique inputs. That's an easy way to end up on Santa's (or Eric's) naughty list.
