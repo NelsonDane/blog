@@ -36,8 +36,8 @@ list:
 
 umamiAnalytics:
   websiteid: "c79b445c-6bac-429c-91c3-48dd00874023"
-  domain: "blog.nelsondane.me"
-  dataDomains: "https://analytics.nelsondane.com"
+  domain: "analytics.nelsondane.com"
+  dataDomains: "blog.nelsondane.me"
   scriptName: "umami"
   enableTrackEvent: true
 
