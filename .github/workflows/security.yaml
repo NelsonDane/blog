@@ -9,4 +9,4 @@ on:
 jobs:
   security:
     name: Workflow Security
-    uses: NelsonDane/Custom-GitHub-Actions/templates/security.yaml@fdb23df3a263b2adcb299a7a98ef70d2c05c03bb
+    uses: NelsonDane/Custom-GitHub-Actions/.github/workflows/security.yaml@c176dc997ed6dde07299da9ba95276e750055f6c
