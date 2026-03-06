@@ -35,7 +35,7 @@ list:
   showSummary: false
 
 umamiAnalytics:
-  webwebsiteid: "c79b445c-6bac-429c-91c3-48dd00874023"
+  websiteid: "c79b445c-6bac-429c-91c3-48dd00874023"
   domain: "blog.nelsondane.me"
   dataDomains: "https://analytics.nelsondane.com"
   scriptName: "umami"
