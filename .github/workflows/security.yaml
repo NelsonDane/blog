@@ -1,0 +1,12 @@
+name: Workflow Security
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/*
+
+jobs:
+  security:
+    name: Workflow Security
+    uses: NelsonDane/Custom-GitHub-Actions/templates/security.yaml@fdb23df3a263b2adcb299a7a98ef70d2c05c03bb
