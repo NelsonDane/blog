@@ -9,8 +9,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: "G-Q7JXDTJ87P"
-
 taxonomies:
   tag: tags
   category: categories

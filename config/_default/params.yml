@@ -34,6 +34,13 @@ list:
   showHero: true
   showSummary: false
 
+umamiAnalytics:
+  webwebsiteid: "c79b445c-6bac-429c-91c3-48dd00874023"
+  domain: "blog.nelsondane.me"
+  dataDomains: "https://analytics.nelsondane.com"
+  scriptName: "umami"
+  enableTrackEvent: true
+
 firebase:
   apiKey: AIzaSyBo7BXRtB4zjc9LyYb0c78bJKKqxOyaxgQ
   authDomain: blog-58d83.firebaseapp.com
