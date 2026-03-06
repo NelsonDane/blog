@@ -10,5 +10,7 @@ jobs:
   security:
     permissions:
       security-events: write
+      contents: read
+      actions: read
     name: Workflow Security
     uses: NelsonDane/Custom-GitHub-Actions/.github/workflows/security.yaml@c176dc997ed6dde07299da9ba95276e750055f6c
