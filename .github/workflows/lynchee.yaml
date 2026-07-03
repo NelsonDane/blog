@@ -1,0 +1,43 @@
+name: Use Lychee to Check for Dead/Broken Links
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - .github/workflows/security.yaml
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {}
+
+jobs:
+  lychee:
+    name: Check for Dead/Broken Links
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install Lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          format: markdown
+          args: content/posts/**/*.md --verbose
+      - name: Comment broken links
+        if: github.event_name == 'pull_request'
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: lychee/out.md
