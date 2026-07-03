@@ -23,7 +23,7 @@ jobs:
     name: Check for Dead/Broken Links
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      pull-requests: write # Needed to comment on PRs
       contents: read
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Run Lychee
-        uses: lycheeverse/lychee-action@v2
+        uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
         id: lychee
         with:
           format: markdown
@@ -43,7 +43,7 @@ jobs:
 
       - name: Comment broken links
         if: github.event_name == 'pull_request'
-        uses: marocchino/sticky-pull-request-comment@v3
+        uses: marocchino/sticky-pull-request-comment@0ea0beb66eb9baf113663a64ec522f60e49231c0 # v3
         with:
           path: lychee/out.md
 
