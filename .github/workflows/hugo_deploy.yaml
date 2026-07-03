@@ -5,7 +5,10 @@ on:
     branches:
       - main
     paths-ignore:
-      - .github/workflows/security.yaml
+      - .github/workflows/*
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 concurrency:
@@ -42,12 +45,14 @@ jobs:
         run: hugo --gc --minify
 
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: ./public
 
   deploy:
     name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
