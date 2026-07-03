@@ -37,6 +37,7 @@ jobs:
         with:
           format: markdown
           args: content/posts/**/*.md --root-dir content --verbose
+          fail: ${{ github.ref == 'refs/heads/main' }} # Only fail on main branch, so PRs can be fixed before merging
 
       - name: Comment broken links
         if: github.event_name == 'pull_request'
