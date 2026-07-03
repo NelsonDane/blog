@@ -35,13 +35,18 @@ jobs:
 
       - name: Run Lychee
         uses: lycheeverse/lychee-action@v2
+        id: lychee
         with:
           format: markdown
           args: content/posts/**/*.md --root-dir content --verbose
-          fail: ${{ github.ref == 'refs/heads/main' }} # Only fail on main branch, so PRs can be fixed before merging
+          fail: false
 
       - name: Comment broken links
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v3
         with:
           path: lychee/out.md
+
+      - name: Fail if broken links found
+        if: steps.lychee.outputs.exit_code != 0
+        run: exit 1
