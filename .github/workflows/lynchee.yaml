@@ -31,11 +31,13 @@ jobs:
           submodules: recursive
           fetch-depth: 0
           persist-credentials: false
+
       - name: Install Lychee
         uses: lycheeverse/lychee-action@v2
         with:
           format: markdown
-          args: content/posts/**/*.md --verbose
+          args: content/posts/**/*.md --root-dir content --verbose
+
       - name: Comment broken links
         if: github.event_name == 'pull_request'
         uses: marocchino/sticky-pull-request-comment@v2
