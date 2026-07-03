@@ -12,10 +12,12 @@ tags: ['talos', 'kubernetes', 'cluster', 'homelab', 'extension']
 No, you don't need to re-install the OS (like I did).
 {{< /lead >}}
 
-## Introduction
-`Talos` is a modern, lightweight (only [12 binaries!](https://www.siderolabs.com/blog/there-are-only-12-binaries-in-talos-linux/)) operating system designed with a single purpose in mind: running Kubernetes. This makes it the perfect choice for my new Kubernetes-based homelab upgrade. However, sometimes you need more than 12 binaries on your host OS, which is why Talos has [extensions](https://www.talos.dev/v1.3/talos-guides/configuration/system-extensions/). This allows you to include extra system functionality (such as gpu drivers, ssh, linux tools, etc.) to your host cluster nodes.
+Updated: 2026-07-03, fixing Talos System Extension links
 
-While the [documentation](https://www.talos.dev/v1.3/talos-guides/configuration/system-extensions/) provides a good overview of how to add extensions to the installer ISO, I had difficulty finding information on how to add extensions to an already existing and deployed cluster.
+## Introduction
+`Talos` is a modern, lightweight (only [12 binaries!](https://www.siderolabs.com/blog/there-are-only-12-binaries-in-talos-linux/)) operating system designed with a single purpose in mind: running Kubernetes. This makes it the perfect choice for my new Kubernetes-based homelab upgrade. However, sometimes you need more than 12 binaries on your host OS, which is why Talos has [extensions](https://docs.siderolabs.com/talos/latest/build-and-extend-talos/custom-images-and-development/system-extensions). This allows you to include extra system functionality (such as gpu drivers, ssh, linux tools, etc.) to your host cluster nodes.
+
+While the [documentation](https://docs.siderolabs.com/talos/latest/build-and-extend-talos/custom-images-and-development/system-extensions) provides a good overview of how to add extensions to the installer ISO, I had difficulty finding information on how to add extensions to an already existing and deployed cluster.
 
 In this post I'll be showing 2 ways to add extensions to your Talos cluster (the 2nd one is better).
 

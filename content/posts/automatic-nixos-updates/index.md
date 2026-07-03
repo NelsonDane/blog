@@ -11,11 +11,13 @@ tags: ['nixos', 'github-actions', 'systemd', 'github', 'automation', 'cluster']
 {{< lead >}}
 *Real men test in production*
 
-A response to "Why Is Enabling Automatic Updates In NixOS So Hard?" by [The Lion's Den](https://aires.fyi/blog/why-is-enabling-automatic-updates-in-nixos-hard/)
+A response to "Why Is Enabling Automatic Updates In NixOS So Hard?" by [The Lion's Den](https://mane.quest/blog/why-is-enabling-automatic-updates-in-nixos-hard/)
 {{< /lead >}}
 
+Updated: 2026-07-03, changing links from [aires.fyi](https://aires.fyi) -> [mane.quest](https://mane.quest)
+
 ## Introduction
-As I was putting together the [Clarkson ECE Cluster](https://github.com/NelsonDane/clarkson-nixos-cluster), I realized that I needed a way to keep the cluster nodes up-to-date without having to manually SSH into each one to pull new packages and configurations from the repository. After searching online, this was a common woe of many `NixOS` users, as enabling automatic updates was not as straightforward as it is on other systems. Partly, this is by design, as `NixOS` is a declarative system, and we don't want each node in the cluster to be updating independently at different times. This issue was put into words by [The Lion's Den](https://aires.fyi/blog/why-is-enabling-automatic-updates-in-nixos-hard/), who asked the question *"Why Is Enabling Automatic Updates In NixOS So Hard?"*
+As I was putting together the [Clarkson ECE Cluster](https://github.com/NelsonDane/clarkson-nixos-cluster), I realized that I needed a way to keep the cluster nodes up-to-date without having to manually SSH into each one to pull new packages and configurations from the repository. After searching online, this was a common woe of many `NixOS` users, as enabling automatic updates was not as straightforward as it is on other systems. Partly, this is by design, as `NixOS` is a declarative system, and we don't want each node in the cluster to be updating independently at different times. This issue was put into words by [The Lion's Den](https://mane.quest/blog/why-is-enabling-automatic-updates-in-nixos-hard/), who asked the question *"Why Is Enabling Automatic Updates In NixOS So Hard?"*
 
 In this post, I'll show you how I set up automatic updates on the `Clarkson ECE Cluster` using `GitHub Actions` and `Systemd`, addressing some of the concerns raised by *The Lion's Den*.
 
@@ -142,7 +144,7 @@ Let's break this down:
 *Now the Source of Truth is Always True*
 {{< /lead >}}
 
-With this workflow running everyday at 3am, the `flake.lock` file on the repository will always be up-to-date. Now, all that's left to do is have the local nodes pull the changes from the repository and apply them. This can be done with a simple [systemd Timer](https://nixos.wiki/wiki/Systemd/Timers) as shown below:
+With this workflow running everyday at 3am, the `flake.lock` file on the repository will always be up-to-date. Now, all that's left to do is have the local nodes pull the changes from the repository and apply them. This can be done with a simple [systemd Timer](https://nixos.wiki/wiki/Systemd/Timersbroooooooooo) as shown below:
 
 ```nix
 # configuration.nix
