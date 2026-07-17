@@ -8,6 +8,9 @@ main:
   - name: "Tags"
     pageRef: "/tags/"
     weight: 10
+  - name: "Info"
+    pageRef: "/info/"
+    weight: 15
   - identifier: "github"
     pre: "github"
     url: "https://github.com/NelsonDane"
@@ -31,3 +34,6 @@ footer:
   - name: "Tags"
     pageRef: "/tags/"
     weight: 20
+  - name: "Info"
+    pageRef: "/info/"
+    weight: 25
