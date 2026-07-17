@@ -144,7 +144,7 @@ Let's break this down:
 *Now the Source of Truth is Always True*
 {{< /lead >}}
 
-With this workflow running everyday at 3am, the `flake.lock` file on the repository will always be up-to-date. Now, all that's left to do is have the local nodes pull the changes from the repository and apply them. This can be done with a simple [systemd Timer](https://nixos.wiki/wiki/Systemd/Timersbroooooooooo) as shown below:
+With this workflow running everyday at 3am, the `flake.lock` file on the repository will always be up-to-date. Now, all that's left to do is have the local nodes pull the changes from the repository and apply them. This can be done with a simple [systemd Timer](https://nixos.wiki/wiki/Systemd/Timers) as shown below:
 
 ```nix
 # configuration.nix

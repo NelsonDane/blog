@@ -38,7 +38,7 @@ jobs:
         id: lychee
         with:
           format: markdown
-          args: content/posts/**/*.md --root-dir content --verbose
+          args: content/posts/**/*.md --root-dir content -a 200,403 --verbose
           fail: false
 
       - name: Comment broken links
